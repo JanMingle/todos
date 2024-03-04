@@ -1,0 +1,105 @@
+/* App.css */
+/* src/index.css or src/App.css */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+.container {
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.left-column {
+  padding: 20px;
+  background-color: #fff;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.right-column {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 40px); /* Adjust the max height as needed */
+  margin-left: 20px; /* Add some margin to separate the columns */
+}
+
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.tasks-table th,
+.tasks-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.tasks-table th {
+  background-color: #f2f2f2;
+}
+
+.completed-tasks-title {
+  margin-top: 20px;
+  color: green;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.show-more-button,
+.show-more-completed-button {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.show-more-button:hover,
+.show-more-completed-button:hover {
+  background-color: #0056b3;
+}
+
+/* ... (existing styles) */
